@@ -198,7 +198,7 @@ static inline ErrorCode search_indices_rectilinear(type_coord x, type_coord y, t
     if (xvalsi1 < xvalsi - 180) xvalsi1 += 360;
     if (xvalsi1 > xvalsi + 180) xvalsi1 -= 360;
 
-    int itMax = 10000;
+    int itMax = 10;
     int it = 0;
     while ( (xvalsi > x) || (xvalsi1 < x) ){
       if (xvalsi1 < x)
